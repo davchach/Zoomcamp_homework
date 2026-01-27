@@ -6,6 +6,8 @@ Q1.
 
 docker run -it --entrypoint bash python:3.13
 root@93a4f8f611d6:/# pip --version
+
+Answer:
 pip 25.3 from /usr/local/lib/python3.13/site-packages/pip (python 3.13)
 
 Q2.
@@ -72,3 +74,7 @@ WHERE zp."Zone" = 'East Harlem North'
   AND g."lpep_pickup_datetime" <  '2025-12-01'
 GROUP BY zd."Zone"
 ORDER BY max_tip_amount DESC;
+
+Answer:
+"dropoff_zone"	"max_tip_amount"
+"Yorkville West"	81.89
