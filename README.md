@@ -78,3 +78,31 @@ ORDER BY max_tip_amount DESC;
 Answer:
 "dropoff_zone"	"max_tip_amount"
 "Yorkville West"	81.89
+
+
+Homework module 2
+
+Q3. 
+
+SELECT COUNT(*) AS rows_2020_yellow
+FROM public.yellow_tripdata
+WHERE EXTRACT(YEAR FROM tpep_pickup_datetime) = 2020;
+
+Answer: 24,648,499
+
+Q4.
+
+SELECT COUNT(*) AS rows_2020_green
+FROM public.green_tripdata
+WHERE EXTRACT(YEAR FROM lpep_pickup_datetime) = 2020;
+
+Answer: 1,734,051
+
+Q5.
+
+SELECT COUNT(*) AS rows_2021_03_yellow
+FROM public.yellow_tripdata
+WHERE tpep_pickup_datetime >= '2021-03-01'
+AND tpep_pickup_datetime <  '2021-04-01';
+
+Answer: 1,925,152
